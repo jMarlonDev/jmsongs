@@ -4,10 +4,10 @@ import { createSongController, getAllSongsController, getSongByIdController, upd
 
 const router = Router();
 
-router.post("/songs", createSongController);
-router.get("/songs", getAllSongsController);
-router.get("songs/:id", getSongByIdController);
-router.put("/songs/:id", updateSongController);
-router.delete("/songs/:id", deleteSongController);
+router.post("/", createSongController);
+router.get("/", getAllSongsController);
+router.get("/:id", getSongByIdController);
+router.put("/:id", updateSongController);
+router.delete(":id", deleteSongController);
 
 export default router;
