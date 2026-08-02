@@ -1,6 +1,6 @@
 import express, { Router } from "express";
 
-import { createSongController, getAllSongsController, getSongByIdController, updateSongController, deleteSongController } from "../controllers/songControllers";
+import { createSongController, getAllSongsController, getSongByIdController, updateSongController, deleteSongController } from "../controllers/songControllers.js";
 
 const router = Router();
 
