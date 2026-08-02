@@ -12,7 +12,7 @@ export async function createSong(songData) {
         throw new Error("The song parameters: title, author, and content ​​are required."); 
     }
 
-    const response = await supabase.from("public.songs")
+    const response = await supabase.from("songs")
     .insert({
         title: songData.title,
         author: songData.author,
